@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UnityPlayerActivity"
+    android:padding="7sp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".UnityPlayerActivity"
+        android:orientation="vertical">
+
+
+        <FrameLayout
+            android:id="@+id/unity_frame"
+            android:layout_width="match_parent"
+            android:layout_height="470sp">
+
+        </FrameLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/sku_list_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="72sp"
+            android:layout_marginBottom="12dp" >
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+        <RadioGroup
+            android:id="@+id/stylingGroup"
+            android:checkedButton="@+id/mat_finish"
+            android:layout_width="match_parent"
+            android:layout_height="50sp"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <RadioButton
+                android:id="@+id/mat_finish"
+                android:layout_width="100sp"
+                android:layout_height="match_parent"
+                android:text="Mat"
+                android:tag="0"/>
+            <RadioButton
+                android:id="@+id/glitter_finish"
+                android:layout_width="100sp"
+                android:layout_height="match_parent"
+                android:text="Glitter"
+                android:tag="1"/>
+            <RadioButton
+                android:id="@+id/glossy_finish"
+                android:layout_width="100sp"
+                android:layout_height="match_parent"
+                android:text="Glossy"
+                android:tag="2"/>
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/intensity_title_text"
+            android:layout_width="261dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Color Intensity"
+            android:textSize="20sp" />
+
+        <SeekBar
+            android:id="@+id/color_seek_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10sp"
+            android:max="100"
+            android:thumb="@drawable/thumb_selector" />
+
+        <Button
+            android:id="@+id/sample_makeup"
+            android:layout_width="250sp"
+            android:layout_height="50sp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10sp"
+            android:text="Apply Sample Makeup"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+
+</ScrollView>

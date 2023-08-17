@@ -1,0 +1,11 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.fynd.glamar_sdk_test.MainActivity">
+    <item
+        android:id="@+id/action_item_one"
+        android:title="Camera"
+        android:icon="@mipmap/ic_launcher"
+        app:showAsAction="always" />
+
+</menu>
